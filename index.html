@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بطاقة دخول الامتحان</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f8f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #202f46;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header i {
+      font-size: 20px;
+    }
+
+    .card {
+      background-color: white;
+      margin: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: right;
+    }
+
+    .info-box {
+      border: 1px dashed #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: right;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .exam {
+      color: #d43f3a;
+    }
+
+    .btn-print {
+      background-color: #2e7d32;
+      color: white;
+      border: 1px solid #2e7d32;
+      padding: 12px 26px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    /* فاصل بين الجزئين */
+    .background-separator {
+      background-color: #f0f9fb; /* اللون الأبيض المزرق الباهت */
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px; /* لإضافة مسافة أسفل الفاصل */
+    }
+
+    /* مستطيل يحتوي على معلومات الطالب والصورة */
+    .student-section {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: right;
+    }
+
+    .student-img-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      display: inline-block;
+
+    }
+
+    .student-name {
+      color: #0074a2;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    .student-details {
+      color: #253442;
+      margin-top: 10px;
+      font-size: 15px;
+      text-align: right;
+      font-weight: bold;
+      line-height: 2.2;
+    }
+
+    .student-section img {
+      border-radius: 10px;
+      width: 150px;
+      height: auto;
+    }
+
+    @media (max-width: 420px) {
+      .card {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .student-section {
+        align-items: flex-end;
+        text-align: right;
+      }
+
+      .student-name,
+      .student-details {
+        text-align: right;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <span><i>☰</i></span>
+    <span>الدائرة المالية - بطاقة دخول</span>
+    <span><i>👤</i></span>
+  </div>
+
+  <div class="card">
+    <div class="info-box">
+      الفصل<br>
+      <span class="exam">20242</span>
+    </div>
+
+    <div class="info-box">
+      للامتحان<br>
+      <span class="exam">20242 الامتحان النصف نهائي / الفصل الدراسي الثاني</span><br>
+    </div>
+
+    <div style="text-align: right;">
+      <button class="btn-print">طباعة البطاقة</button>
+    </div>
+  </div>
+
+  <!-- فاصل خلفي باهت بين الجزء العلوي والجزء السفلي -->
+  <div class="background-separator">
+    <div class="student-section">
+      <div class="student-name">بيسان جمال احمد اسمران</div>
+      <div class="student-img-container">
+        <img src='https://i.postimg.cc/xCLkHvrT/Adobe-Express-file.jpg' border='0' alt='Adobe-Express-file'/>
+      </div>
+      <div class="student-details">
+        رقم الطالب: 202310703<br>
+        الكلية: تكنولوجيا المعلومات<br>
+        التخصص: علم البيانات والذكاء الاصطناعي
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
